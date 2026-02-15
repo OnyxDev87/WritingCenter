@@ -1,10 +1,19 @@
-html, body {
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
     font-family: monospace;
     background-color: #f4f4f4;
     text-align: center;
@@ -19,7 +28,7 @@ ul {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #1e5c1e;
+    background-color: #3b7b42;
 }
 
 ul li a {
@@ -31,7 +40,7 @@ ul li a {
     font-size: 20px;
 }
 
-ul li a:hover { background-color: #144114; }
+ul li a:hover { background-color: #316637; }
 
 .circle {
     border-radius: 50%;
@@ -42,20 +51,16 @@ ul li a:hover { background-color: #144114; }
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 4px solid #2f8e2f;
+    border: 4px solid #3b7b42;
     display: block;
     margin: 0.5rem 0;
-}
-
-#logo {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title {
     font-size: 36px;
-    color: #2f8e2f;
+    color: #3b7b42;
     margin: 1rem 0;
     font-family: monospace;
 }
@@ -63,13 +68,31 @@ ul li a:hover { background-color: #144114; }
 .text {
     font-size: 18px;
     color: #ffffff;
-    margin: 1rem 2rem;
+    margin: 1rem auto;
     font-family: monospace;
     border-radius: 8px;
-    background-color: #1e5c1e;
+    background-color: #3b7b42;
     width: 50%;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
     display: inline-block;
+    box-sizing: border-box;
+}
+
+.header {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 1rem auto;
+    font-family: monospace;
+    border-radius: 8px;
+    background-color: #3b7b42;
+    /* width: 50%; */
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    /* display: inline-block; */
+    /* box-sizing: border-box; */
 }
