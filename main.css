@@ -7,6 +7,12 @@ html {
     padding: 0;
     overflow-x: hidden;
     width: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
 }
 
 body {
@@ -17,6 +23,17 @@ body {
     font-family: monospace;
     background-color: #f4f4f4;
     text-align: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0px;
 }
 
 ul {
@@ -132,7 +149,7 @@ ul li a:hover { background-color: #316637; }
     color: white;
     padding: 0.6rem;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 36px;
 }
 
 .schedule td {
@@ -142,4 +159,17 @@ ul li a:hover { background-color: #316637; }
     border-radius: 8px;
     text-align: center;
     min-width: 150px;
+    font-weight: bold;
+    font-size: 24px;
 }
+
+.button {
+    background-color: #3b7b42;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 28px;
+}
+
+.button:hover { background-color: #316637; }
